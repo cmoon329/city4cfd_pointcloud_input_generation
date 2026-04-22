@@ -26,10 +26,10 @@ def get_gee_dsm(save_dir, target_region, target_city, bbox):
     # 2. Preprocess save path and AOI
     save_path = os.path.join(save_dir, f'{target_city}.tif')
 
-    bbox_s = float(bbox[1]) - 0.002
-    bbox_n = float(bbox[3]) + 0.002
-    bbox_w = float(bbox[0]) - 0.002
-    bbox_e = float(bbox[2]) + 0.002
+    bbox_s = float(bbox[1]) - 0.005
+    bbox_n = float(bbox[3]) + 0.005
+    bbox_w = float(bbox[0]) - 0.005
+    bbox_e = float(bbox[2]) + 0.005
 
     aoi = ee.Geometry.BBox(bbox_w, bbox_s, bbox_e, bbox_n)
 
