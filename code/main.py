@@ -4,6 +4,7 @@ import os
 import get_dsm
 import convert_dsm_to_las
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate DSM (GeoTIFF) and convert to LAS/LAZ point cloud with CRS preserved",
