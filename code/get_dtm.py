@@ -7,15 +7,6 @@ import numpy as np
 
 
 def download_dtm(save_path, bbox, api_key, dem_dataset):
-    """
-    Args:
-        dem_dataset: default -> COP30
-        bbox: list [West, South, East, North]
-        api_key: personal Open Topography API key
-
-    Returns:
-
-    """
     bbox_s = bbox[1] - 0.005
     bbox_n = bbox[3] + 0.005
     bbox_w = bbox[0] - 0.005
